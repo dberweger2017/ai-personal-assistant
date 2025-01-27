@@ -1,0 +1,28 @@
+# Ignore .env file
+.env
+
+# Ignore the secret folder inside tools
+tools/secret/
+
+# macOS specific files
+.DS_Store
+._*
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+*.pyc
+__pycache__/
+
+# Python virtual environment
+venv/
+env/
+*.venv/
+
+# Other common files
+*.log
+*.tmp
+*.bak
