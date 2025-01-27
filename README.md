@@ -1,6 +1,6 @@
 # Davide's Intelligent Personal Assistant 🤖
 
-![Project Banner](https://placehold.co/1200x400/2d2b42/FFF?text=AI-Powered%20Productivity%20Assistant)  
+![Project Banner](https://ibb.co/c6X9NbX)  
 
 A sophisticated digital assistant leveraging cutting-edge AI to streamline personal productivity and communication. Built with modern AI infrastructure and cloud service integrations.
 
