@@ -22,8 +22,8 @@ def session_exists_and_is_valid():
     return False
 
 if not session_exists_and_is_valid():
-    username = "dberweger2017@proton.me"
-    password = "ZurichBarcelona1318!2024"
+    username = os.environ.get("PROTON_EMAIL")
+    password = os.environ.get("PROTON_PASSWORD")
     proton.login(username, password)
     proton.save_session(session_file_path)
 
