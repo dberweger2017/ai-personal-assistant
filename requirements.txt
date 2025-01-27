@@ -6,3 +6,4 @@ python-dotenv==1.0.1
 todoist_api_python==2.1.7
 python-telegram-bot==21.10
 Flask==3.1.0
+streamlit-authenticator==0.4.1
