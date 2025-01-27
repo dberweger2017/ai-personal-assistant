@@ -1,0 +1,9 @@
+protonmail
+beautifulsoup4
+streamlit
+openai
+python-dotenv
+todoist-api-python
+python-telegram-bot
+python-dateutil
+Flask
