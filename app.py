@@ -22,7 +22,7 @@ st.title("Davide Personal Assistant")
 
 def reset_thread():
     st.session_state.thread_id = None
-    st.experimental_rerun()
+    st.rerun()
 
 with st.sidebar:
     st.title("Thread Control")
