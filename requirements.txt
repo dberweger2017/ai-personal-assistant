@@ -1,9 +1,8 @@
-protonmail
-beautifulsoup4
-streamlit
-openai
-python-dotenv
-todoist-api-python
-python-telegram-bot
-python-dateutil
-Flask
+protonmail-api-client==2.0.0
+beautifulsoup4==4.12.3
+streamlit==1.41.0
+openai==1.60.1
+python-dotenv==1.0.1
+todoist_api_python==2.1.7
+python-telegram-bot==21.10
+Flask==3.1.0

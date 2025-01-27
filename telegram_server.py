@@ -1,6 +1,5 @@
 import os
 import json
-import time
 import asyncio
 from openai import OpenAI
 from telegram import Update
