@@ -11,7 +11,6 @@ if not os.path.exists(os.path.dirname(session_file_path)):
 
 proton = ProtonMail()
 
-# Initialize and check session
 def session_exists_and_is_valid():
     if os.path.exists(session_file_path):
         try:
