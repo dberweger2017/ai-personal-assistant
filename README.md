@@ -34,15 +34,17 @@ A sophisticated digital assistant leveraging cutting-edge AI to streamline perso
 
 ```mermaid
 graph TD
-    A[User Interface] --> B[Streamlit Web App]
-    A --> C[Telegram Bot]
+    A[User Interface] --> B[Google Drive Folder]
+    A --> C[Streamlit Web App]
     A --> D[REST API]
-    B --> E[OpenAI Assistant]
-    C --> E
-    D --> E
-    E --> F[Proton Mail Integration]
-    E --> G[Todoist API]
-    E --> H[Knowledge Base]
+    A --> E[Telegram Bot]
+    A --> F[Apple Assistant]
+    C --> G[OpenAI Assistant]
+    D --> G
+    E --> G
+    G --> H[Knowledge Base]
+    G --> I[Todoist API]
+    G --> J[Proton Mail Integration]
 ```
 
 ### Technical Highlights
