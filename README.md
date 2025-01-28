@@ -1,6 +1,6 @@
 # Davide's Intelligent Personal Assistant 🤖
 
-![Project Banner](https://i.ibb.co/BVRf7dZy/lateral3.png)  
+![Project Banner](https://i.ibb.co/G3cBw843/lateral.png)  
 
 A sophisticated digital assistant leveraging cutting-edge AI to streamline personal productivity and communication. Built with modern AI infrastructure and cloud service integrations.
 
