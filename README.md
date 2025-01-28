@@ -34,19 +34,52 @@ A sophisticated digital assistant leveraging cutting-edge AI to streamline perso
 
 ```mermaid
 graph TD
-    A[User Interface] --> B[Google Drive Folder]
-    A --> C[Streamlit Web App]
-    A --> D[REST API]
-    A --> E[Telegram Bot]
-    A --> F[Apple Assistant]
-    F --> E
-    B --> K[Knowledge Base]
-    C --> G[OpenAI Assistant]
-    D --> G
-    E --> G
-    G --> I[Todoist API]
-    G --> J[Proton Mail Integration]
-    G --> K
+    subgraph User Interfaces
+        A[Telegram User] -->|messages| B(Telegram Bot)
+        C[Browser User] -->|interacts with| D(Streamlit Web App)
+        N[API User] -->|sends requests| E(OpenAI Assistant API)
+        O[Apple Assistant User] -->|messages via Telegram| B
+    end
+
+    subgraph Backend Services
+        B -->|uses| E[OpenAI Assistant API]
+        D -->|uses| E
+        N -->|uses| E
+        E -->|direct calls| G[ProtonMail API]
+        E -->|direct calls| H[Todoist API]
+        E -->|fetches info| R[Knowledge Base]
+    end
+
+    subgraph Data Storage
+        G -->|stores emails| I[(ProtonMail Server)]
+        H -->|stores tasks| J[(Todoist Server)]
+        E -->|threads| K[(OpenAI Session Storage)]
+        R -->|populated by| S[Vector Database]
+        S -->|data source| T[Google Drive Folder]
+    end
+
+    subgraph Authentication
+        D -->|uses| L[Streamlit Authenticator]
+        B -->|uses| M[Telegram Auth]
+        N -->|uses| Q[API Key]
+    end
+
+    style A fill:#D6EAF8,stroke:#3498DB
+    style C fill:#D6EAF8,stroke:#3498DB
+    style N fill:#D6EAF8,stroke:#3498DB
+    style O fill:#D6EAF8,stroke:#3498DB
+    style B fill:#ABEBC6,stroke:#28B463
+    style D fill:#ABEBC6,stroke:#28B463
+    style E fill:#F9E79F,stroke:#D4AC0D
+    style G fill:#D2B4DE,stroke:#8E44AD
+    style H fill:#D2B4DE,stroke:#8E44AD
+    style I fill:#E8DAEF,stroke:#7D3C98
+    style J fill:#E8DAEF,stroke:#7D3C98
+    style K fill:#E8DAEF,stroke:#7D3C98
+    style Q fill:#AED6F1,stroke:#2E86C1
+    style R fill:#F7DC6F,stroke:#F1C40F
+    style S fill:#D5F5E3,stroke:#27AE60
+    style T fill:#D5F5E3,stroke:#27AE60
 ```
 
 ### Technical Highlights
