@@ -39,12 +39,14 @@ graph TD
     A --> D[REST API]
     A --> E[Telegram Bot]
     A --> F[Apple Assistant]
+    F --> E
+    B --> K[Knowledge Base]
     C --> G[OpenAI Assistant]
     D --> G
     E --> G
-    G --> H[Knowledge Base]
     G --> I[Todoist API]
     G --> J[Proton Mail Integration]
+    G --> K
 ```
 
 ### Technical Highlights
